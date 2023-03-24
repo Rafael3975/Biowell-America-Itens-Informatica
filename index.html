@@ -120,7 +120,8 @@
             <div class="form-msg-erro" id="msg-senha"></div>
 
             <br><br>
-            <input type="submit" class="button" value="Entrar" class="form-campo-registrar">
+            <a class="button" href="https://listagem-itens-biowell.vercel.app/"><button>Entrar</button></a>
+            <!--<input type="submit" class="button" value="Entrar" class="form-campo-registrar">-->
 
             
         </form>
@@ -136,14 +137,14 @@
                 
                 var valido = true;
 
-                if(email=="rafael@biowellamerica.com.br") {
+                if(email.value=="rafael@biowellamerica.com.br") {
                 document.getElementById("msg-email").innerHTML="* O email é obrigatório";
                 valido = false;
                     }else{
                         document.getElementById("msg-email").innerHTML="https://listagem-itens-biowell.vercel.app/";
                     }
 
-                if(senha=="admin") {
+                if(senha.value=="admin") {
                 document.getElementById("msg-senha").innerHTML="* A senha precisa conter de 5 a 16 caracteres";
                 valido = false;
                     }else{
